@@ -7,10 +7,10 @@ module.exports = {
   devServer: {
     proxy: {
       '^/api': {
-        target: 'https://my-json-server.typicode.com/StiensWout/frontend-team-2',
+        target: 'https://my-json-server.typicode.com/StiensWout/frontend-team-2/',
         changeOrigin: true,
         logLevel: 'debug',
-        pathRewrite: { '^/api': '/' },
+        //pathRewrite: { '^/api': '/' },
       },
     },
   },
