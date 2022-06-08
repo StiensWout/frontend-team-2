@@ -1,0 +1,85 @@
+{
+  "garagisten": [
+    {
+      "id": 0,
+      "name": "Max",
+      "email": "max@mail.com",
+      "phoneNumber": "0477659878",
+      "garageNumber": 1,
+      "garageName": "Max's Garage",
+      "garageAddress": "Max's Street 123",
+      "garageCity": "Max's City",
+      "garageZipCode": "12345",
+      "garageCountry": "Max's Country"
+    },
+    {
+      "id": 1,
+      "name": "Wout",
+      "email": "wout@mail.com",
+      "phoneNumber": "0477659878",
+      "garageNumber": 1,
+      "garageName": "Wout's Garage",
+      "garageAddress": "Wout's Street 123",
+      "garageCity": "Wout's City",
+      "garageZipCode": "12345",
+      "garageCountry": "Wout's Country"
+    },
+    {
+      "id": 2,
+      "name": "Loic",
+      "email": "Loic@mail.com",
+      "phoneNumber": "0477659878",
+      "garageNumber": 1,
+      "garageName": "Loic's Garage",
+      "garageAddress": "Loic's Street 123",
+      "garageCity": "Loic's City",
+      "garageZipCode": "12345",
+      "garageCountry": "Loic's Country"
+    }
+  ],
+  "vrachtwagens": [
+    {
+      "id": 0,
+      "merk": "merceds",
+      "type": "e-class",
+      "kenteken": "1-ABC-123",
+      "vinnummer": "123456789"
+    },
+    {
+      "id": 1,
+      "merk": "peugot",
+      "type": "sedab",
+      "kenteken": "1-ABC-456",
+      "vinnummer": "758975435"
+    },
+    {
+      "id": 2,
+      "merk": "ford",
+      "type": "mustang",
+      "kenteken": "1-ABC-789",
+      "vinnummer": "890543589"
+    }
+  ],
+  "onderhouden": [
+    {
+      "id": 0,
+      "datum": "2020-01-01",
+      "beschrijving": "onderhoud van wagen 1 in Max's Garage"
+    },
+    {
+      "id": 1,
+      "datum": "2020-01-02",
+      "beschrijving": "onderhoud van wagen 2 in Wout's Garage"
+    },
+    {
+      "id": 2,
+      "datum": "2020-01-03",
+      "beschrijving": "onderhoud van wagen 3 in Loic's Garage"
+    },
+    {
+      "datum": "2022-06-25",
+      "beschrijving": "onderhoud van wagen 4 in Max's garage",
+      "id": 3
+    }
+  ]
+}
