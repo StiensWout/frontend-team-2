@@ -46,7 +46,7 @@ export default {
     methods: {
         async deleteGaragist(id) {
             if (confirm('Ben je zeker dat je deze garagist wilt verwijderen?')) {
-                const res = await fetch(`api/garagisten/${id}`, {
+                const res = await fetch(`https://my-json-server.typicode.com/StiensWout/frontend-team-2/garagisten/${id}`, {
                     method: 'DELETE',
                 })
 
@@ -59,7 +59,7 @@ export default {
 
         },
         async addGaragist(garagist) {
-            const res = await fetch('api/garagisten',
+            const res = await fetch('https://my-json-server.typicode.com/StiensWout/frontend-team-2/garagisten',
                 {
                     method: 'POST',
                     headers: {
@@ -77,7 +77,7 @@ export default {
             this.showAddGaragist = !this.showAddGaragist
         },
         async fetchGaragisten() {
-            const res = await fetch('api/garagisten')
+            const res = await fetch('https://my-json-server.typicode.com/StiensWout/frontend-team-2/garagisten')
 
             const data = await res.json()
 
@@ -85,7 +85,7 @@ export default {
 
         },
         async fetchGaragist(id) {
-            const res = await fetch(`api/garagisten/${id}`)
+            const res = await fetch(`https://my-json-server.typicode.com/StiensWout/frontend-team-2/garagisten/${id}`)
 
             const data = await res.json()
 

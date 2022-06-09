@@ -46,7 +46,7 @@ export default {
     methods: {
         async deleteOnderhoud(id) {
             if (confirm('Ben je zeker dat je dit onderhoud wilt verwijderen?')) {
-                const res = await fetch(`api/onderhouden/${id}`, {
+                const res = await fetch(`https://my-json-server.typicode.com/StiensWout/frontend-team-2/onderhouden/${id}`, {
                     method: 'DELETE',
                 })
 
@@ -59,7 +59,7 @@ export default {
 
         },
         async addOnderhoud(onderhoud) {
-            const res = await fetch('api/onderhouden',
+            const res = await fetch('https://my-json-server.typicode.com/StiensWout/frontend-team-2/onderhouden',
                 {
                     method: 'POST',
                     headers: {
@@ -77,7 +77,7 @@ export default {
             this.showAddOnderhoud = !this.showAddOnderhoud
         },
         async fetchOnderhouden() {
-            const res = await fetch('api/onderhouden')
+            const res = await fetch('https://my-json-server.typicode.com/StiensWout/frontend-team-2/onderhouden')
 
             const data = await res.json()
 
@@ -85,7 +85,7 @@ export default {
 
         },
         async fetchOnderhoud(id) {
-            const res = await fetch(`api/onderhouden/${id}`)
+            const res = await fetch(`https://my-json-server.typicode.com/StiensWout/frontend-team-2/onderhouden/${id}`)
 
             const data = await res.json()
 

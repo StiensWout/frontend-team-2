@@ -46,7 +46,7 @@ export default {
     methods: {
         async deleteVrachtwagen(id) {
             if (confirm('Ben je zeker dat je deze vrachtwagen wilt verwijderen?')) {
-                const res = await fetch(`api/vrachtwagens/${id}`, {
+                const res = await fetch(`https://my-json-server.typicode.com/StiensWout/frontend-team-2/vrachtwagens/${id}`, {
                     method: 'DELETE',
                 })
 
@@ -59,7 +59,7 @@ export default {
 
         },
         async addVrachtwagen(vrachtwagen) {
-            const res = await fetch('api/vrachtwagens',
+            const res = await fetch('https://my-json-server.typicode.com/StiensWout/frontend-team-2/vrachtwagens',
                 {
                     method: 'POST',
                     headers: {
@@ -77,7 +77,7 @@ export default {
             this.showAddVrachtwagen = !this.showAddVrachtwagen
         },
         async fetchVrachtwagens() {
-            const res = await fetch('api/vrachtwagens')
+            const res = await fetch('https://my-json-server.typicode.com/StiensWout/frontend-team-2/vrachtwagens')
 
             const data = await res.json()
 
@@ -85,7 +85,7 @@ export default {
 
         },
         async fetchVrachtwagen(id) {
-            const res = await fetch(`api/vrachtwagens/${id}`)
+            const res = await fetch(`https://my-json-server.typicode.com/StiensWout/frontend-team-2/vrachtwagens/${id}`)
 
             const data = await res.json()
 
