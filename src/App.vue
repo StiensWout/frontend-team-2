@@ -8,7 +8,6 @@
       <router-link v-if="authenticated" to="/onderhoudPage">Onderhouden</router-link>
       <router-link v-if="authenticated" to="/vrachtwagenPage">Vrachtwagens</router-link>
       <router-link v-if="authenticated" to="/garagistPage">Garagisten</router-link>
-      <router-link to="/about">About</router-link>
 
       <router-link v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
       <router-link v-else to="/login">Login</router-link>
